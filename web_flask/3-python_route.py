@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-start Flask application
+start Flask web application
 """
 
 from flask import Flask
@@ -10,19 +10,19 @@ app = Flask(__name__)
 
 @app.route("/", strict_slashes=False)
 def index():
-    """returns Hello HBNB!"""
+    """returning Hello HBNB!"""
     return "Hello HBNB!"
 
 
 @app.route("/hbnb", strict_slashes=False)
 def hbnb():
-    """returns HBNB"""
+    """returning HBNB"""
     return "HBNB"
 
 
 @app.route("/c/<text>", strict_slashes=False)
 def cisfun(text):
-    """display “C ” followed by the <text>"""
+    """displays “C ” followed by the <text>"""
     txt = text.replace("_", " ")
 
     return "C " + txt
@@ -31,7 +31,7 @@ def cisfun(text):
 @app.route("/python/<text>", strict_slashes=False)
 @app.route("/python", strict_slashes=False)
 def pythoniscool(text="is cool"):
-    """display “Python ”, followed by the value of the text variable"""
+    """displays “Python ”, followed by the value of the text variable"""
     text = text.replace("_", " ")
     return "Python " + text
 
