@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/", strict_slashes=False)
 def index():
-    """printsHello HBNB!"""
+    """print Hello HBNB!"""
     return "Hello HBNB!"
 
 
@@ -22,7 +22,6 @@ def hbnb():
 def cisfun(text):
     """displays “C ” followed by the <text>"""
     txt = text.replace("_", " ")
-
     return "C " + txt
 
 

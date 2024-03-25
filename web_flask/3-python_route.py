@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-start Flask web application
-"""
-
+"""start Flask web application"""
 from flask import Flask
 
 app = Flask(__name__)
@@ -24,7 +21,6 @@ def hbnb():
 def cisfun(text):
     """displays “C ” followed by the <text>"""
     txt = text.replace("_", " ")
-
     return "C " + txt
 
 

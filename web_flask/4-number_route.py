@@ -21,7 +21,6 @@ def hbnb():
 def cisfun(text):
     """display “C ” followed by the <text>"""
     txt = text.replace("_", " ")
-
     return "C " + txt
 
 
